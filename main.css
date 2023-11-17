@@ -162,6 +162,9 @@ footer {
 .nav-link.btn.btn-link2:hover {
   color: #34d2e7;
 }
+#cc:hover {
+  color: #000b0c !important;
+}
 
 .nav-link.btn.btn-link:hover {
   color: #34d2e7;
