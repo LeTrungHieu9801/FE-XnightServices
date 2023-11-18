@@ -25,6 +25,10 @@ body {
   --bs-accordion-btn-color: #fff !important;
   --bs-link-color: #fffbfb !important;
 }
+.row
+{
+  --bs-gutter-x:0;
+}
 
 #menu_2:hover #sub-menu {
   display: block !important;
@@ -109,6 +113,12 @@ footer {
   padding: 1vh;
 }
 
+#service
+{
+  padding-top: 2% !important;
+  padding-bottom: 5% !important;
+}
+
 .social-menu li {
   display: block;
 
@@ -142,7 +152,7 @@ footer {
 
 /* text - body 1  */
 .text-body-1 {
-  font-family: Mont;
+  /* font-family: Mont; */
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -233,7 +243,7 @@ footer {
 }
 
 .title2 {
-  font-family: Mont;
+  /* font-family: Mont; */
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -454,8 +464,8 @@ a.tunecore-btn:hover {
 }
 
 .b {
-  margin-right: calc(var(--bs-gutter-x)/ 2);
-  margin-left: calc(var(--bs-gutter-x)/ 2);
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 0px;
   padding-bottom: 50px;
   border-radius: 8px;
@@ -506,13 +516,12 @@ a.tunecore-btn:hover {
 
 .policy-ul {
   display: none;
-  margin: 10px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
   font-weight: normal;
-  padding: 4px;
   background-color: #3c3c3c;
-  border: 1px solid #424242d6;
   color: white;
   border-radius: 5px;
+  padding: 0px;
 }
 
 /* li:hover .policy-ul {
@@ -523,16 +532,18 @@ a.tunecore-btn:hover {
   width: 170px;
   display: inline-block;
   list-style: none;
-  color: rgb(133, 152, 238) !important;
+  color: rgb(255, 255, 255) !important;
   font-weight: 900;
   text-align: left;
   line-height: 32px;
   border-radius: var(--bs-border-radius);
+  margin: 0px !important;
 }
 
 .policy-ul li:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: rgb(233, 62, 62);
+  padding: 0px;
+  border-radius: 10px;
 }
 
 #policy:hover > ul
@@ -543,7 +554,8 @@ a.tunecore-btn:hover {
 .policy-ul li a {
   display: inline-block;
   font-size: .875rem;
-  margin: 0px 8px;
+  padding: 8px;
+  border-radius: 20px;
 }
 
 
@@ -603,8 +615,8 @@ a.tunecore-btn:hover {
 
 .orbit-wrap>li {
   position: absolute;
-  left: 68%;
-  top: 25%;
+  left: 36%;
+  top: 24%;
   transform: translate(-50%, -50%);
 }
 
@@ -630,14 +642,14 @@ ul[class^=ring] li {
 }
 
 .size_icon {
-  width: 70px;
-  height: 70px;
+  width: 60px ;
+  height: 60px ;
   max-width: none;
 }
 
 .size_icon1 {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
   margin-left: 5px;
 }
@@ -763,7 +775,8 @@ ul[class^=ring] li {
 }
 
 ul[class^=ring] {
-  /* border: dashed 1px #25e9e9d5; */
+  border: solid 3px ;
+  border-image-source:linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1)) !important; ;
   position: relative;
   padding: 0;
   border-radius: 50%;
@@ -1100,18 +1113,19 @@ ul[class^=ring] li {
     padding: 0px;
   }
 
-  .col-md-4 {
+  .col-md-6 {
     margin-left: 0px !important;
     margin-top: 10px !important;
     padding: 0px 10px 20px 10px !important;
   }
 
-  .col-md-4 div div {
+  .col-md-6 div div, .buttonHowMuch {
     display: flex;
     justify-content: center;
+    padding-bottom: 5px;
   }
 
-  h3.title2 {
+  h3.title2 , .title2.highlight{
     text-align: center;
   }
 
@@ -1311,10 +1325,7 @@ ul[class^=ring] li {
       min-height: 0px !important;
   }
 
-  .navbar.navbar-expand-lg.navbar-dark.fixed-top.bg-blur
-  {
 
-  }
   
   .text-body1.repminHeader
   {
@@ -1324,9 +1335,69 @@ ul[class^=ring] li {
   {
     height: 50vh !important;
   }
-
 }
 
+  /* .maxwidth
+  {
+    max-width: 100% ;
+    text-align: center !important;
+  } */
+  
+@media(min-width: 900px) and (max-width:2500px)
+{
+
+  .aa
+  {
+    margin-left: 14% !important;
+    margin-top: 2% !important;
+    max-width: 60% !important;
+    /* text-align: center !important; */
+  }
+
+  .the1
+  {
+    margin-left: 12% !important;
+  }
+  .col-md-3
+  {
+    width: 18% !important;
+  }
+  .row.repmin250px
+  {
+    margin-left: 0px !important;
+     justify-content: center;
+  }
+  #service .col-md-4
+  {
+    margin-left: 0% !important;
+  }
+  #service > div
+  {
+     justify-content: center;
+  }
+}
+.bodervideo
+{
+  border-radius: 12px; /* Độ bo góc của container */
+  overflow: hidden; 
+
+}
+#borderDiv
+{
+  width: 100%;
+  height: 100%;
+  border: 5px solid !important;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1)) !important;
+  border-radius: 10px !important;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  font-weight: 900;
+  white-space: nowrap;
+}
 /* #region FAG */
 
 #faq .nav-pills {
